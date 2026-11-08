@@ -19,9 +19,11 @@ export default function Hero() {
               Full-stack developer helping clinics, cafés and local brands get
               online, from first call to launch.
             </p>
-            <div className="flex flex-wrap gap-3.5">
-              <Button href="#projects">View my work</Button>
-              <Button href="#contact" variant="outline">
+            <div className="flex flex-col gap-3.5 sm:flex-row">
+              <Button href="#projects" className="w-full sm:w-auto">
+                View my work
+              </Button>
+              <Button href="/contact" variant="outline" className="w-full sm:w-auto">
                 Get in touch
               </Button>
             </div>

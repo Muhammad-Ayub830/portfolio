@@ -38,7 +38,7 @@ export default function About() {
               ))}
             </ul>
             {/* TODO: point to the full About page once it exists */}
-            <a href="#about" className="w-fit font-semibold text-accent">
+            <a href="/about" className="w-fit font-semibold text-accent">
               More about me →
             </a>
           </div>
