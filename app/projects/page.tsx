@@ -82,9 +82,21 @@ export default function ProjectsPage() {
                             <span className="sr-only"> (opens in a new tab)</span>
                           </a>
                         )}
-                        <p className="text-sm text-gray-500">
-                          Case study coming soon
-                        </p>
+                        {p.caseStudyPdf ? (
+                          <a
+                            href={p.caseStudyPdf}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center rounded-[10px] border border-gray-300 bg-white px-7 py-4 font-semibold text-ink hover:bg-surface"
+                          >
+                            Read case study (PDF)
+                            <span className="sr-only"> (opens in a new tab)</span>
+                          </a>
+                        ) : (
+                          <p className="text-sm text-gray-500">
+                            Case study coming soon
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>

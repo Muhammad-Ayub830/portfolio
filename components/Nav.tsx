@@ -8,8 +8,8 @@ import { SITE } from "@/lib/site";
 const links = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
-  { label: "About", href: "/#about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
@@ -44,7 +44,7 @@ export default function Nav() {
           </nav>
 
           <div className="hidden md:block">
-            <Button href="/#contact" size="sm">
+            <Button href="/contact" size="sm">
               Hire me
             </Button>
           </div>
@@ -93,7 +93,7 @@ export default function Nav() {
               </a>
             ))}
             <Button
-              href="/#contact"
+              href="/contact"
               size="sm"
               className="mt-2 w-full"
               onClick={() => setOpen(false)}

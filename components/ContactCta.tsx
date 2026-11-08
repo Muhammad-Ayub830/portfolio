@@ -1,6 +1,5 @@
 import Container from "./Container";
 import Button from "./Button";
-import { SITE } from "@/lib/site";
 
 export default function ContactCta() {
   return (
@@ -13,8 +12,7 @@ export default function ContactCta() {
           <p className="max-w-[48ch] text-lg text-indigo-100">
             Tell me about your idea. I reply within 24 hours.
           </p>
-          {/* TODO: replace the mailto link with the contact form page when it exists */}
-          <Button href={`mailto:${SITE.email}`} variant="white" className="mt-1">
+          <Button href="/contact" variant="white" className="mt-1">
             Get in touch
           </Button>
         </div>

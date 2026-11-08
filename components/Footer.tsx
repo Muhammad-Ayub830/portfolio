@@ -4,7 +4,6 @@ import { SITE } from "@/lib/site";
 export default function Footer() {
   const links = [
     { label: "GitHub", href: SITE.github },
-    { label: "LinkedIn", href: SITE.linkedin },
     { label: "Email", href: `mailto:${SITE.email}` },
   ];
 

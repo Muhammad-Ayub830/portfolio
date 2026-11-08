@@ -17,18 +17,13 @@ export default function HowIWork() {
           {steps.map((step, i) => (
             <li
               key={step.title}
-              className="flex flex-col gap-3.5 rounded-2xl border border-line bg-surface p-7"
+              className="flex flex-col gap-3 rounded-2xl border border-line bg-surface p-7"
             >
-              <span
-                aria-hidden="true"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft text-lg font-bold text-accent"
-              >
-                {i + 1}
-              </span>
-              <h3 className="text-xl font-semibold">{step.title}</h3>
-              <p className="text-[15px] leading-[23px] text-muted">
-                {step.text}
+              <p className="text-xs font-semibold uppercase tracking-[0.08em] text-accent">
+                Step {i + 1}
               </p>
+              <h3 className="text-2xl font-bold leading-tight">{step.title}</h3>
+              <p className="text-base leading-[26px] text-muted">{step.text}</p>
             </li>
           ))}
         </ol>

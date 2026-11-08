@@ -10,7 +10,10 @@ export type Project = {
   image?: string;
   slug: string; // used in the link: /projects#<slug>
   liveUrl?: string; // live site (opens in a new tab). Leave out until deployed.
+  caseStudyPdf?: string; // PDF in /public, e.g. "/case-studies/haq-electronics.pdf" (opens in a new tab)
 };
+
+
 
 export const projects: Project[] = [
   {
@@ -18,37 +21,44 @@ export const projects: Project[] = [
     badge: "Real client",
     real: true,
     description:
-      "Online store for an electronics shop in Peshawar, built with Next.js.",
+      "Responsive electronics store for browsing products, managing orders, and shopping online.",
     tags: ["Next.js", "E-commerce"],
     slug: "haq-electronics",
     liveUrl: "https://haq1.com",
+    caseStudyPdf: "/case-studies/haq-electronics.pdf",
     accent: "#2563EB",
     soft: "#DBEAFE",
     image: "/projects/haq-electronics-home.png",
   },
   {
-    title: "Clinic website",
-    badge: "Concept project",
+    title: "Multi-Page E-commerce Dashboard",
+    badge: "Personal project",
     real: false,
     description:
-      "Appointment-focused site that builds trust for a health clinic.",
-    tags: ["Booking", "SEO"],
-    accent: "#0D9488",
-    soft: "#CCFBF1",
-    slug: "clinic-website",
+      "Responsive analytics dashboard for managing business data, tracking sales, and viewing insights.",
+    tags: ["Next.js", "Tailwind CSS", "Recharts", "Dashboard"],
+    slug: "ecommerce-dashboard",
+    liveUrl: "https://dashobards-using-next.vercel.app/dashboard",
+    accent: "#FF8904",
+    soft: "#FFF0DB",
+    image: "/projects/ecommerce-dashboard.png",
   },
   {
-    title: "Café website",
-    badge: "Concept project",
+    title: "Edusity – Education Website",
+    badge: "Personal project",
     real: false,
     description:
-      "Menu-first brand site with a clear way to visit or order.",
-    tags: ["Branding", "Menu"],
-    accent: "#D97706",
-    soft: "#FEF3C7",
-    slug: "cafe-website",
+      "Modern education website showcasing academic programs, campus life, student experiences, and contact information.",
+    tags: ["Landing Page", "Education", "Responsive UI"],
+    slug: "edusity-website",
+    liveUrl: "https://professional-landing-page-eight.vercel.app/",
+    accent: "#37306B",
+    soft: "#EEECFA",
+    image: "/projects/edusity-home.png",
   },
 ];
+
+
 
 export const steps = [
   {
