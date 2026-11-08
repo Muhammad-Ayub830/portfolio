@@ -7,5 +7,5 @@ export const SITE = {
   url: "https://example.com", // TODO: replace with the real domain
   email: "muhammadayubmrk@gmail.com", // TODO: replace with the email address on the real domain
   github: "https://github.com/Muhammad-Ayub830", // TODO: replace
-  // linkedin: "https://www.linkedin.com/in/your-profile", // TODO: replace
+  linkedin: "https://www.linkedin.com/in/your-profile", // TODO: replace
 };
